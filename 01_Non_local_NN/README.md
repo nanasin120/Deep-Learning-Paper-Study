@@ -15,6 +15,7 @@ non-local 연산은 한번에 입력 전체를 처리하는 연산이다.
 # Non-local operation 그림
 
 ![image.png](image.png)
+> *그림 출처: Wang et al., "Non-local Neural Networks", CVPR 2018*
 
 여기서 X는 입력 데이터, ⊗은 행렬 곱, ⊕은 원소별 합을 나타낸다.
 
@@ -51,3 +52,7 @@ $z_i = W_zy_i + x_i$ (7)
 6번 식은 $g$함수를 보여준다. 가중치 $W_g$와 곱함으로서 데이터의 특징을 뽑아낸다.
 
 7번 식의 $W_z$는 마지막 원소별 합으로 512로 줄였던 channel을 1024로 다시 돌려준다.
+
+---
+## 참고 문헌 (References)
+* **Paper**: Wang, X., Girshick, R., Gupta, A., & He, K. (2018). [Non-local Neural Networks](https://arxiv.org/abs/1711.07971). *Proceedings of the IEEE conference on computer vision and pattern recognition*.
