@@ -1,5 +1,3 @@
-# 깃허브용  Layer Normalization
-
 # 1. 소개
 
 RNN에서 배치 정규화를 적용하는 경우에는 다음과 같은 단점이 존재한다..
@@ -233,6 +231,7 @@ RelU의 경우 데이터의 절반은 음수가 절반은 양수이 매번 데�
  $w = g \cdot \frac{v}{||v||}$와 같이 방향은 유지하며 길이는 1로 만들며 $g$를 이용해 약간의 조정을 해 만든다.
 
 ![image.png](image.png)
+*그림 출처: Ba et al., "Layer Normalization", NeurIPS 2016*
 
 ### 4.1.1 배치 정규화와 가중치 정규화의 불변성
 
@@ -348,9 +347,9 @@ $\gamma^\top$은 $(1 \times D)$ 가로 벡터이다. $𝕩$는 입력 데이터 
 
 이 둘을 연산하면 하나의 값이 나온다. 이 값을 k라고 해보자.
 
-$1\gamma^\top𝕩$에서 $1$은 $(H \times 1)$라고 했다. 그러니 
+$1\gamma^\top𝕩 $에서 $1$은 $(H \times 1)$라고 했다. 그러니 
 
-$1\gamma^\top𝕩=\begin{bmatrix} k \\ k \\ \vdots \\ k \end{bmatrix}$
+$$ 1\gamma^\top𝕩=\begin{bmatrix} k \\ k \\ \vdots \\ k \end{bmatrix} $$
 , 즉 $(H \times 1)$짜리 k로 채워진 세로 벡터가 된다.
 
 여기에 $\gamma^\top𝕩$는 k라는 스칼라 값이고 벡터와 스칼라의 뺄셈은 
@@ -835,4 +834,11 @@ $F$에서 gain 파라미터에 따른 방향은 들어오는 가중치의 크기
 
 # 5. 효과
 
-뭐 결국 정규화 되어서 좋다는것 아니겠는가
+Layer Normalization은 단순히 정규화를 넘어 가중치 크기에 따른 학습률 조절이라는 효과까지 갖고 있다.
+
+이젠 Layer Normalization을 통해 평균과 표준편차를 저장하지 않고 모든 데이터를 독립적으로 정규화 할 수 있다.
+
+---
+
+## 참고 문헌 (References)
+* **Paper**: Ba, J. L., Kiros, J. R., & Hinton, G. E. (2016). Layer Normalization. arXiv preprint arXiv:1607.06450. (Presented at NeurIPS 2016)
