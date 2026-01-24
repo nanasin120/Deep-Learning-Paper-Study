@@ -8,7 +8,8 @@
 | Index | Paper Title | Keywords | Status | Link |
 | :---: | :--- | :--- | :---: | :---: |
 | 01 | **Non-local Neural Networks** (CVPR 2018) | `Computer Vision` `Attention` `Long-range Dependency` | ✅ | [Go to Folder](./01_Non_local_NN) |
-| 02 | *Next Paper (Coming Soon)* | `...` | 🚧 | - |
+| 02 | **Layer Normalization** (NeurIPS 2016) | `Normalization`, `RNN`, `Geometry` | ✅ | [Go to Folder](./02_Layer_normalization) |
+| 03 | *Next Paper (Coming Soon)* | `...` | 🚧 | - |
 
 <br>
 
