@@ -9,7 +9,8 @@
 | :---: | :--- | :--- | :---: | :---: |
 | 01 | **Non-local Neural Networks** (CVPR 2018) | `Computer Vision` `Attention` `Long-range Dependency` | ✅ | [Go to Folder](./01_Non_local_NN) |
 | 02 | **Layer Normalization** (NeurIPS 2016) | `Normalization`, `RNN`, `Geometry` | ✅ | [Go to Folder](./02_Layer_normalization) |
-| 03 | *Next Paper (Coming Soon)* | `...` | 🚧 | - |
+| 03 | **Deep_Residual_Learning_for_Image_Recognition** (CVPR 2016) | `Computer Vision` `Residual learning` `BottleNeck` | ✅ | [Go to Folder](./03_Deep_Residual_Learning_for_Image_Recognition) |
+| 04 | *Next Paper (Coming Soon)* | `...` | 🚧 | - |
 
 <br>
 
